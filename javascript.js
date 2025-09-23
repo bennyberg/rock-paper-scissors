@@ -2,6 +2,9 @@ const ROCK = "rock";
 const PAPER = "paper";
 const SCISSORS = "scissors";
 
+let humanScore = 0;
+let computerScore = 0;
+
 const getComputerChoice = function(){
     const choice = Math.random();
 
@@ -14,4 +17,10 @@ const getComputerChoice = function(){
     else{
         return SCISSORS;
     }  
+}
+
+const getHumanChoice = function(){
+    userChoice = prompt();
+
+    return userChoice;
 }
